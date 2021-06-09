@@ -87,8 +87,7 @@ export default {
   mounted() {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=" +
-          import.meta.env.VITE_APIKEY
+        "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=VITE_APIKEY=6a3a99ba97fd40fa956e37e15b727ef8"
       )
       .then((response) => {
         let date = new Date();
